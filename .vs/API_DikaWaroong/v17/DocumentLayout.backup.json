@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\controllers\\produkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\controllers\\produkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\models\\createproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\models\\createproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\controllers\\kategoricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\controllers\\kategoricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\api_dikawaroong.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\api_dikawaroong.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|d:\\kuliah farel\\semester 4\\paa\\api_dikawaroong\\api_dikawaroong\\helpers\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6547E590-A828-4893-A1D3-7168F667B5A4}|API_DikaWaroong\\API_DikaWaroong.csproj|solutionrelative:api_dikawaroong\\helpers\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateProductRequest.cs",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Models\\CreateProductRequest.cs",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\Models\\CreateProductRequest.cs",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Models\\CreateProductRequest.cs",
+              "RelativeToolTip": "API_DikaWaroong\\Models\\CreateProductRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:08:17.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KategoriController.cs",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Controllers\\KategoriController.cs",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\Controllers\\KategoriController.cs",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Controllers\\KategoriController.cs",
+              "RelativeToolTip": "API_DikaWaroong\\Controllers\\KategoriController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAA4wIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:22:07.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Kategori.cs",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Models\\Kategori.cs",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\Models\\Kategori.cs",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Models\\Kategori.cs",
+              "RelativeToolTip": "API_DikaWaroong\\Models\\Kategori.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:21:35.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\appsettings.json",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\appsettings.json",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\appsettings.json",
+              "RelativeToolTip": "API_DikaWaroong\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-09T14:56:14.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProdukController.cs",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Controllers\\ProdukController.cs",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\Controllers\\ProdukController.cs",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Controllers\\ProdukController.cs",
+              "RelativeToolTip": "API_DikaWaroong\\Controllers\\ProdukController.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAmwJUAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T14:54:31.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produk.cs",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Models\\Produk.cs",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\Models\\Produk.cs",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Models\\Produk.cs",
+              "RelativeToolTip": "API_DikaWaroong\\Models\\Produk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T14:53:55.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SqlDBHelper.cs",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Helpers\\SqlDBHelper.cs",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\Helpers\\SqlDBHelper.cs",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Helpers\\SqlDBHelper.cs",
+              "RelativeToolTip": "API_DikaWaroong\\Helpers\\SqlDBHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T14:52:54.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "API_DikaWaroong.csproj",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\API_DikaWaroong.csproj",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\API_DikaWaroong.csproj",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\API_DikaWaroong.csproj",
+              "RelativeToolTip": "API_DikaWaroong\\API_DikaWaroong.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-09T14:37:54.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Program.cs",
+              "RelativeDocumentMoniker": "API_DikaWaroong\\Program.cs",
+              "ToolTip": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\Program.cs",
+              "RelativeToolTip": "API_DikaWaroong\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T14:39:28.326Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

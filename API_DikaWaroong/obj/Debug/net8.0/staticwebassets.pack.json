@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\38be7a62-559a-4bdb-9032-f39d66f7d750.png",
+      "PackagePath": "staticwebassets\\images\\38be7a62-559a-4bdb-9032-f39d66f7d750.png"
+    },
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\3a629f7a-00c9-4c55-acd8-cc63d7ca55df.png",
+      "PackagePath": "staticwebassets\\images\\3a629f7a-00c9-4c55-acd8-cc63d7ca55df.png"
+    },
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\a55d5a8b-c8ca-4965-b8d6-0cd03587d123.png",
+      "PackagePath": "staticwebassets\\images\\a55d5a8b-c8ca-4965-b8d6-0cd03587d123.png"
+    },
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\cd209f3e-649a-407a-8b4a-d6f049b25350.png",
+      "PackagePath": "staticwebassets\\images\\cd209f3e-649a-407a-8b4a-d6f049b25350.png"
+    },
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\d32e05e2-a770-433e-8b9d-3c949a59efd9.png",
+      "PackagePath": "staticwebassets\\images\\d32e05e2-a770-433e-8b9d-3c949a59efd9.png"
+    },
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\db1b8c38-cc24-44e2-9d77-6df08ffc8abe.png",
+      "PackagePath": "staticwebassets\\images\\db1b8c38-cc24-44e2-9d77-6df08ffc8abe.png"
+    },
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\ddc33a24-faa9-4c4f-b444-e186b5b55eae.png",
+      "PackagePath": "staticwebassets\\images\\ddc33a24-faa9-4c4f-b444-e186b5b55eae.png"
+    },
+    {
+      "Id": "D:\\Kuliah farel\\Semester 4\\PAA\\API_DikaWaroong\\API_DikaWaroong\\wwwroot\\images\\efc0ac49-b2fb-433f-82bd-9821d3ae6ad6.png",
+      "PackagePath": "staticwebassets\\images\\efc0ac49-b2fb-433f-82bd-9821d3ae6ad6.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API_DikaWaroong.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API_DikaWaroong.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.API_DikaWaroong.props",
+      "PackagePath": "build\\API_DikaWaroong.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.API_DikaWaroong.props",
+      "PackagePath": "buildMultiTargeting\\API_DikaWaroong.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.API_DikaWaroong.props",
+      "PackagePath": "buildTransitive\\API_DikaWaroong.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
