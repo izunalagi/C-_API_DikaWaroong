@@ -6,29 +6,28 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// DATABASE Connection
+// === DATABASE Connection ===
 var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 string connectionString;
 
 if (!string.IsNullOrEmpty(databaseUrl))
 {
-    // Parsing PostgreSQL URL ke format Npgsql
+    // Convert DATABASE_URL to Npgsql connection string
     var uri = new Uri(databaseUrl);
     var userInfo = uri.UserInfo.Split(':');
-
     connectionString = $"Host={uri.Host};Port={uri.Port};Username={userInfo[0]};Password={userInfo[1]};Database={uri.AbsolutePath.TrimStart('/')};SSL Mode=Require;Trust Server Certificate=true";
 }
 else
 {
-    // Default ke koneksi lokal dari appsettings.json
+    // Fallback to local appsettings.json
     connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
 }
 
-// DB Context
+// === DB Context ===
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 
-// JWT Authentication
+// === JWT Authentication ===
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
@@ -48,39 +47,44 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// CORS
+// === CORS ===
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFlutterWeb", policy =>
     {
         policy.WithOrigins(
-            "http://localhost:57307", // local Flutter Web
-            "https://c-apidikawaroong-production.up.railway.app" // domain Railway kamu
+            "http://localhost:57307", // Local Flutter Web
+            "https://c-apidikawaroong-production.up.railway.app" // Domain Railway kamu
         )
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
 });
 
+// === Middleware ===
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Swagger
+// === Swagger ===
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+// === Middleware Order ===
 app.UseCors("AllowFlutterWeb");
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
+
+// Optional: root route untuk test langsung "/"
+app.MapGet("/", () => "API DikaWaroong is running...");
 
 app.MapControllers();
 
