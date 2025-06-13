@@ -6,28 +6,9 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// === DATABASE Connection ===
-var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
-string connectionString;
+// === DB Context langsung dari appsettings.*.json ===
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-if (!string.IsNullOrEmpty(databaseUrl))
-{
-    var uri = new Uri(databaseUrl);
-    var userInfo = uri.UserInfo.Split(':');
-
-    connectionString = $"Host={uri.Host};Port={uri.Port};Username={userInfo[0]};Password={userInfo[1]};Database={uri.AbsolutePath.TrimStart('/')};SSL Mode=Require;Trust Server Certificate=true";
-
-    // Logging untuk memastikan URL terbaca
-    Console.WriteLine("[DEBUG] DATABASE_URL found.");
-    Console.WriteLine($"[DEBUG] Parsed connection string: {connectionString}");
-}
-else
-{
-    connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
-    Console.WriteLine("[WARNING] DATABASE_URL not found. Using DefaultConnection.");
-}
-
-// === DB Context ===
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 
@@ -57,15 +38,14 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFlutterWeb", policy =>
     {
         policy.WithOrigins(
-            "http://localhost:57307", // Ganti jika port berubah
-            "https://c-apidikawaroong-production.up.railway.app"
+            "http://localhost:57307", // Flutter Web lokal
+            "https://c-apidikawaroong-production.up.railway.app" // Railway
         )
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
 });
 
-// === Middleware ===
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -79,17 +59,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// === Middleware Order ===
 app.UseCors("AllowFlutterWeb");
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
 
-// === Test Route
+// Optional test endpoint
 app.MapGet("/", () => "API DikaWaroong is running...");
 
-// === Map Controllers
 app.MapControllers();
 
 app.Run();
