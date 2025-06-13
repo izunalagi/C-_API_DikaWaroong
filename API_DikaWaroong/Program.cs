@@ -7,8 +7,9 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // === DB Context langsung dari appsettings.*.json ===
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+Console.WriteLine($"[DEBUG] Connection String: {connectionString}");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 
