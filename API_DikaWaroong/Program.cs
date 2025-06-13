@@ -6,11 +6,29 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// DATABASE Connection
+var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+string connectionString;
+
+if (!string.IsNullOrEmpty(databaseUrl))
+{
+    // Parsing PostgreSQL URL ke format Npgsql
+    var uri = new Uri(databaseUrl);
+    var userInfo = uri.UserInfo.Split(':');
+
+    connectionString = $"Host={uri.Host};Port={uri.Port};Username={userInfo[0]};Password={userInfo[1]};Database={uri.AbsolutePath.TrimStart('/')};SSL Mode=Require;Trust Server Certificate=true";
+}
+else
+{
+    // Default ke koneksi lokal dari appsettings.json
+    connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
+}
+
 // DB Context
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
 
-// JWT Auth
+// JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
@@ -28,16 +46,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     };
 });
 
-builder.Services.AddAuthorization(); // <-- WAJIB
+builder.Services.AddAuthorization();
 
 // CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFlutterWeb", policy =>
     {
-        policy.WithOrigins("http://localhost:57307") // Ganti jika port flutter berubah
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        policy.WithOrigins(
+            "http://localhost:57307", // local Flutter Web
+            "https://c-apidikawaroong-production.up.railway.app" // domain Railway kamu
+        )
+        .AllowAnyHeader()
+        .AllowAnyMethod();
     });
 });
 
@@ -57,7 +78,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowFlutterWeb");
 
 app.UseHttpsRedirection();
-app.UseAuthentication(); // <-- PENTING URUTANNYA
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
 
