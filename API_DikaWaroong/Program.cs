@@ -12,15 +12,19 @@ string connectionString;
 
 if (!string.IsNullOrEmpty(databaseUrl))
 {
-    // Convert DATABASE_URL to Npgsql connection string
     var uri = new Uri(databaseUrl);
     var userInfo = uri.UserInfo.Split(':');
+
     connectionString = $"Host={uri.Host};Port={uri.Port};Username={userInfo[0]};Password={userInfo[1]};Database={uri.AbsolutePath.TrimStart('/')};SSL Mode=Require;Trust Server Certificate=true";
+
+    // Logging untuk memastikan URL terbaca
+    Console.WriteLine("[DEBUG] DATABASE_URL found.");
+    Console.WriteLine($"[DEBUG] Parsed connection string: {connectionString}");
 }
 else
 {
-    // Fallback to local appsettings.json
     connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
+    Console.WriteLine("[WARNING] DATABASE_URL not found. Using DefaultConnection.");
 }
 
 // === DB Context ===
@@ -53,8 +57,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFlutterWeb", policy =>
     {
         policy.WithOrigins(
-            "http://localhost:57307", // Local Flutter Web
-            "https://c-apidikawaroong-production.up.railway.app" // Domain Railway kamu
+            "http://localhost:57307", // Ganti jika port berubah
+            "https://c-apidikawaroong-production.up.railway.app"
         )
         .AllowAnyHeader()
         .AllowAnyMethod();
@@ -77,15 +81,15 @@ if (app.Environment.IsDevelopment())
 
 // === Middleware Order ===
 app.UseCors("AllowFlutterWeb");
-
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
 
-// Optional: root route untuk test langsung "/"
+// === Test Route
 app.MapGet("/", () => "API DikaWaroong is running...");
 
+// === Map Controllers
 app.MapControllers();
 
 app.Run();
